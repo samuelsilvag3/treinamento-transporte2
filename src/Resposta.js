@@ -1,9 +1,8 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export default class Resposta extends Component {
-  render() {
-    return (
-      <div className='form-group'>
+const Resposta = (props) => {
+  return (
+    <div className='form-group'>
             <label htmlFor='resposta'>Resposta:</label>
             <textarea
                 id='resposta'
@@ -12,6 +11,7 @@ export default class Resposta extends Component {
                 readOnly
             ></textarea>
       </div>
-    )
-  }
+  )
 }
+
+export default Resposta
