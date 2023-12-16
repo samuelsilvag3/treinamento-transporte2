@@ -6,9 +6,8 @@ const Resposta = (props) => {
             <label htmlFor='resposta'>Resposta:</label>
             <textarea
                 id='resposta'
-                name='Resposta'
                 className='form-control'
-                readOnly
+                value={props.mostrar}
             ></textarea>
       </div>
   )
