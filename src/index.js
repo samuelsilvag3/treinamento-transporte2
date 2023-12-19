@@ -32,18 +32,18 @@ class App extends React.Component{
     render(){
         console.log('Metodo render')
         
-        return <div className='container mt-2'>
+        return <div className='container border rounded mt-2'>
             <nav className="navbar navbar-light bg-light">
-                <a className="navbar-brand" href="#">
+                <a className="navbar-brand text-center" href="#">
                 <img src="https://nslogtransportes.com.br/wp-content/uploads/2021/06/cropped-selo-35-180x180.png" width="30" height="30" alt=""/>
                 Treinamento Transportes
                 </a>
             </nav>
-            <div className='d-flex justify-content-center mt-2 p-3'>
-            <div className='row col-md-4 border-1 border-round border-400'>
+            <div className='row mt-2 p-3'>
+            <div className='row col-lg-4 col-md-4 col-sm-12'>
                 <img src="https://nslogtransportes.com.br/wp-content/uploads/2021/04/trabqlhe-sonosco-1024x755.jpg" height="320" alt=""/>
             </div>
-            <div className='col-md-8 mt-2 p-3'>            
+            <div className='col-lg-8 col-md-8 col-sm-12 mt-2 p-3'>            
                 <div className='mt-2'>
                     <Resposta mostrar={this.state.resposta}/>
                 </div>
