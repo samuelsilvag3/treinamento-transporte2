@@ -18,14 +18,15 @@ export default class Pergunta extends Component {
 
   render() {
     return (
-      <form onSubmit={this.onFormSubmit}>
+      <form onSubmit={this.onFormSubmit} className='form-group'>
+          
+          <label htmlFor='pergunta'>Digite aqui a sua Duvida:</label>
+          <textarea
+            className='form-control'
+            id="pergunta"
+          ></textarea>
+          
           <div>
-            <textarea
-              id="pergunta"
-            ></textarea>
-          </div>
-          <div className='row'>
-            <label htmlFor='enviar'>Digite aqui a sua Duvida:</label>
             <button id='enviar' className='btn btn-outline-primary mt-2'>Enviar</button>
           </div>
       </form>

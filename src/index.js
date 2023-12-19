@@ -33,15 +33,24 @@ class App extends React.Component{
         console.log('Metodo render')
         
         return <div className='container mt-2'>
-            <div className='row justify-content-center'>
-                <div className='col-md-8'>
+            <nav className="navbar navbar-light bg-light">
+                <a className="navbar-brand" href="#">
+                <img src="https://nslogtransportes.com.br/wp-content/uploads/2021/06/cropped-selo-35-180x180.png" width="30" height="30" alt=""/>
+                Treinamento Transportes
+                </a>
+            </nav>
+            <div className='d-flex justify-content-center mt-2 p-3'>
+            <div className='row col-md-4 border-1 border-round border-400'>
+                <img src="https://nslogtransportes.com.br/wp-content/uploads/2021/04/trabqlhe-sonosco-1024x755.jpg" height="320" alt=""/>
+            </div>
+            <div className='col-md-8 mt-2 p-3'>            
+                <div className='mt-2'>
                     <Resposta mostrar={this.state.resposta}/>
                 </div>
-            </div>
-            <div className='row justify-content-center'>
-                <div className='col-md-8'>
+                <div className='mt-2'>
                     <Pergunta enviarPrompt={this.enviarPrompt}/>
                 </div>
+            </div>
             </div>
         </div>
     }
