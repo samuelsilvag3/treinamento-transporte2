@@ -6,9 +6,14 @@ export default class Pergunta extends Component {
     consulta: ''
   }
 
+  onConsulta = (event) => {
+    console.log(event.target.value)
+    this.setState({consulta: event.target.value})
+  }
+
   onFormSubmit = (event) => {
     event.preventDefault()
-    this.state.consulta = document.getElementById("pergunta").value
+    //this.state.consulta = document.getElementById("pergunta").value
 
     //não esta atualizando a variavel de estado
     //this.setState({consulta: document.getElementById("pergunta").value})
@@ -24,6 +29,7 @@ export default class Pergunta extends Component {
           <textarea
             className='form-control'
             id="pergunta"
+            onChange={this.onConsulta}
           ></textarea>
           
           <div>
